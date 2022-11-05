@@ -32,7 +32,7 @@ fetch('./javascript/featured-images.json')
     .then(data => {
         let featuredImages = ''
         data.featuredData.forEach(dataFeatured =>{
-            featuredImages+= `
+            featuredImages += `
             <div class="featured-items-container">
                 <div class="featured-image-container">
                     <img src=${dataFeatured.img} alt="Featured image" >
@@ -44,4 +44,25 @@ fetch('./javascript/featured-images.json')
             </div>`
         })
         featuredFlex.innerHTML = featuredImages
+    })
+
+// fetch data from essensials image
+const essentialsFlex = document.querySelector(".essentials-flex")
+
+fetch('./javascript/essentials-images.json')
+.then(response => response.json())
+    .then(data => {
+        let essentialsImages = ''
+        data.essentialsData.forEach(essentialsData => {
+            essentialsImages += `
+            <div class="essentials-items-container">
+                <div class="essentials-image-container">
+                    <img src=${essentialsData.img} alt="Essentials images" >
+                </div>
+                <div class="essentials-button-container">
+                    <button>${essentialsData.button}</button>
+                </div>
+            </div>`
+        })
+        essentialsFlex.innerHTML =  essentialsImages
     })
