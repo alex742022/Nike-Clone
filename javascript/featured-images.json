@@ -1,0 +1,16 @@
+{
+    "featuredData": [
+        {
+            "id": 1,
+            "button": "Shop",
+            "text": "Just In: Fast Pack",
+            "img": "../images/features-img1.webp"
+        },
+        {
+            "id": 2,
+            "button": "Shop",
+            "text": "Just In: Fast Pack",
+            "img": "../images/features-img2.webp"
+        }
+    ]
+}
