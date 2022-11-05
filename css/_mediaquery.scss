@@ -330,6 +330,61 @@
                 margin-top: 30px;
             }
         }
+        .section-5{
+            margin-top: 84px;
+            h2{
+                font-weight: 200;
+            }
+            .essentials-flex{
+                display: flex;
+                column-gap: 15px;
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                scroll-padding: 20px;
+                padding: 0px 20px 40px;
+                margin-top: 20px;
+                &::-webkit-scrollbar{
+                    height: 6px;
+                    display: none;
+                }
+                &::-webkit-scrollbar-track{
+                    margin-left: 20px;
+                }
+                &:hover::-webkit-scrollbar{
+                    display: block;
+                }
+                &::-webkit-scrollbar-thumb{
+                    background-color: gray;
+                    border-radius: 100vh;
+                }
+                .essentials-items-container{
+                    position: relative;
+                    width: 80%;
+                    scroll-snap-align: start;
+                    flex-shrink: 0;
+                    .essentials-image-container{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .essentials-button-container{
+                        position: absolute;
+                        left: 30px;
+                        bottom: 20px;
+                        color: white;
+                        button{
+                            border: none;
+                            background-color: white;
+                            border-radius: 100vw;
+                            padding: 10px 20px;
+                            margin-top: 25px;
+                            font-size: 16px;
+                        }
+                    } 
+                }
+            }
+        }
     }
 }
 // @media only screen and (min-width: 960px) {
