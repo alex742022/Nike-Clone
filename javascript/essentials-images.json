@@ -1,0 +1,16 @@
+{
+    "essentialsData": [
+        {
+            "img": "../images/essential-img1.webp",
+            "button": "Tops and T-Shirts"
+        },
+        {
+            "img": "../images/essential-img2.webp",
+            "button": "Shorts"
+        },
+        {
+            "img": "../images/essential-img3.webp",
+            "button": "Pants and Leggings"
+        }
+    ]
+}
