@@ -8,7 +8,17 @@
 
 @media only screen and (min-width: 200px) {
   .container {
-    padding: 0 20px;
+    padding: 0 25px;
+    max-width: 1950px;
+    margin: 0 auto;
+  }
+  .container-carousel {
+    padding: 0;
+    max-width: 1950px;
+    margin: 0 auto;
+  }
+  button {
+    cursor: pointer;
   }
   header .header-1 {
     display: none;
@@ -51,7 +61,11 @@
     margin: 10px 20px 10px 0;
     align-self: flex-end;
   }
-  header .header-2 .navbar-container ul li {
+  header .header-2 .navbar-container ul a {
+    text-decoration: none;
+    color: black;
+  }
+  header .header-2 .navbar-container ul a li {
     font-size: 25px;
     margin: 0 0 20px 30px;
   }
@@ -69,6 +83,11 @@
     height: 100vh;
     z-index: 2;
     background-color: white;
+    transition: top 0.1s ease;
+  }
+  header .header-2 .right-container .navbar-search-container .navbar-search-logo {
+    display: none;
+    width: 60px;
   }
   header .header-2 .right-container .navbar-search-container .navbar-search-header-container {
     display: flex;
@@ -135,6 +154,9 @@
   header .header-2 .right-container .heart-icon {
     display: none;
   }
+  header .header-2 .right-container .input-right {
+    display: none;
+  }
   header .header-3 {
     background: rgb(240, 240, 240);
     height: 60px;
@@ -157,7 +179,11 @@
     display: flex;
     list-style: none;
   }
-  .content .header-1 ul li {
+  .content .header-1 ul a {
+    text-decoration: none;
+    color: black;
+  }
+  .content .header-1 ul a li {
     margin-right: 30px;
   }
   .content .section-1 .image-wide-mobile-container img {
@@ -192,9 +218,12 @@
   .content .section-2 .carousel-header {
     display: flex;
     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   .content .section-2 .carousel-header h2 {
+    width: 100%;
     font-weight: 200;
   }
   .content .section-2 .carousel-header .arrow-flex {
@@ -395,5 +424,398 @@
     padding: 10px 20px;
     margin-top: 25px;
     font-size: 16px;
+  }
+  .content .section-5 .list-items {
+    margin-top: 84px;
+  }
+  .content .section-5 .list-items .list-flex .list-container ul {
+    list-style: none;
+  }
+  .content .section-5 .list-items .list-flex .list-container ul li {
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .content .section-5 .list-items .list-flex .list-container .each-list-container {
+    margin-left: 20px;
+    overflow: hidden;
+    opacity: 0;
+    height: 0px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+  }
+  .content .section-5 .list-items .list-flex .list-container .each-list-container ul a {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+  }
+  .content .section-5 .list-items .list-flex .list-container .each-list-container-toggle-one {
+    height: 385px;
+    opacity: 1;
+  }
+  .content .section-5 .list-items .list-flex .list-container .each-list-container-toggle-three {
+    height: 233px;
+    opacity: 1;
+  }
+  .content .section-5 .list-items .list-flex .list-container .each-list-hide {
+    height: 0px;
+  }
+  .content footer .footer {
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+  }
+  .content footer .footer .first-flex-container ul {
+    list-style: none;
+    padding-top: 30px;
+  }
+  .content footer .footer .first-flex-container ul a {
+    text-decoration: none;
+    color: white;
+  }
+  .content footer .footer .first-flex-container ul a .first-list {
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .content footer .footer .first-flex-container .lists-second {
+    padding-top: 30px;
+  }
+  .content footer .footer .first-flex-container .lists-second p {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .content footer .footer .first-flex-container .lists-second .get-help-list ul {
+    padding-top: 0;
+  }
+  .content footer .footer .first-flex-container .lists-second .get-help-list ul a {
+    color: gray;
+  }
+  .content footer .footer .first-flex-container .lists-second .get-help-list ul a li {
+    margin-bottom: 20px;
+    font-size: small;
+  }
+  .content footer .footer .first-flex-container .lists-third {
+    padding-top: 30px;
+  }
+  .content footer .footer .first-flex-container .lists-third p {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .content footer .footer .first-flex-container .lists-third .about-nike-list ul {
+    padding-top: 0;
+  }
+  .content footer .footer .first-flex-container .lists-third .about-nike-list ul a {
+    color: gray;
+  }
+  .content footer .footer .first-flex-container .lists-third .about-nike-list ul a li {
+    margin-bottom: 20px;
+    font-size: small;
+  }
+  .content footer .footer .first-flex-container .footer-icon-container {
+    display: flex;
+    padding-top: 30px;
+  }
+  .content footer .footer .first-flex-container .footer-icon-container .each-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 7px;
+  }
+  .content footer .footer .first-flex-container .footer-icon-container .each-icon-container img {
+    height: 100%;
+  }
+  .content footer .footer .footer-grid {
+    margin-top: 30px;
+    padding-bottom: 10px;
+  }
+  .content footer .footer .footer-grid span {
+    font-size: small;
+    display: block;
+  }
+  .content footer .footer .footer-grid .location {
+    margin-bottom: 18px;
+  }
+  .content footer .footer .footer-grid .copy-right {
+    margin-bottom: 45px;
+  }
+  .content footer .footer .footer-grid .footer-flex-about {
+    list-style: none;
+  }
+  .content footer .footer .footer-grid .footer-flex-about li {
+    font-size: small;
+    margin-bottom: 20px;
+    color: gray;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .content .section-1 .image-wide-mobile-container .web-nike {
+    display: block;
+  }
+  .content .section-1 .image-wide-mobile-container .mobile-nike {
+    display: none;
+  }
+  .content .section-2 .carousel-header .arrow-flex .arrow-container {
+    display: flex;
+  }
+  .content .section-3 .featured-flex {
+    flex-direction: row;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .content .section-4 .latest-img-container .mobile-latest-img {
+    display: none;
+  }
+  .content .section-4 .latest-img-container .web-latest-img {
+    display: block;
+  }
+  .content .section-5 .list-items .list-flex {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .content .section-5 .list-items .list-flex .list-container .each-list-container {
+    overflow-y: scroll;
+    margin-left: 0px;
+  }
+  .content footer .footer .first-flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content footer .footer .first-flex-container .footer-icon-container {
+    width: 23%;
+    justify-content: end;
+    align-content: flex-start;
+    align-items: flex-start;
+    row-gap: 15px;
+    flex-wrap: wrap;
+  }
+  .content footer .footer .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    padding-bottom: 20px;
+  }
+  .content footer .footer .footer-grid .copy-right-and-location-container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .content footer .footer .footer-grid .copy-right-and-location-container .copy-right, .content footer .footer .footer-grid .copy-right-and-location-container .location {
+    margin-bottom: 0;
+  }
+  .content footer .footer .footer-grid .copy-right-and-location-container .copy-right {
+    color: gray;
+  }
+  .content footer .footer .footer-grid .footer-flex-about {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+  }
+  .content footer .footer .footer-grid .footer-flex-about li {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .container {
+    padding: 0 40px;
+  }
+  header .header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: height 1s ease;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 7px 50px;
+  }
+  header .header-1 img {
+    width: 20px;
+  }
+  header .header-1 .about-list {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+  }
+  header .header-1 .about-list li {
+    margin-left: 13px;
+  }
+  header .header-1 .about-list span {
+    margin-left: 13px;
+  }
+  header .header-2 {
+    display: flex;
+    align-items: center;
+    padding: 7px 50px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .header-2 .logo-2 {
+    width: 100%;
+  }
+  header .header-2 .logo-2 img {
+    width: 60px;
+  }
+  header .header-2 .navbar-container {
+    position: static;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .header-2 .navbar-container ul {
+    flex-direction: row;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .header-2 .navbar-container ul img {
+    display: none;
+  }
+  header .header-2 .navbar-container ul a li {
+    font-size: 16px;
+    margin: 0;
+  }
+  header .header-2 .right-container {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px;
+    width: 100%;
+    height: 50px;
+  }
+  header .header-2 .right-container .navbar-search-container {
+    height: 200px;
+  }
+  header .header-2 .right-container .navbar-search-container .navbar-search-logo {
+    display: block;
+  }
+  header .header-2 .right-container .navbar-search-container .navbar-search-header-container .input-container {
+    margin: 0 auto;
+  }
+  header .header-2 .right-container .navbar-search-container .navbar-search-header-container .search-cancel-toggle {
+    margin-right: 0;
+  }
+  header .header-2 .right-container img {
+    margin-left: 0;
+  }
+  header .header-2 .right-container .heart-icon {
+    display: block;
+    grid-column: 2/3;
+  }
+  header .header-2 .right-container .bag-icon {
+    grid-column: 3/4;
+  }
+  header .header-2 .right-container .search-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    border-radius: 100vw;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 0 10px 0 30px;
+    padding: 10px 15px;
+  }
+  header .header-2 .right-container .search-container .search-icon-toggle {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  header .header-2 .right-container .search-container .search-icon-toggle:hover {
+    background: rgb(220, 220, 220);
+  }
+  header .header-2 .right-container .search-container .input-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline-style: none;
+    margin-left: 0px;
+  }
+  header .header-2 .right-container .search-container .input-right::-moz-placeholder {
+    color: rgb(190, 190, 190);
+    font-size: 16px;
+  }
+  header .header-2 .right-container .search-container .input-right:-ms-input-placeholder {
+    color: rgb(190, 190, 190);
+    font-size: 16px;
+  }
+  header .header-2 .right-container .search-container .input-right::placeholder {
+    color: rgb(190, 190, 190);
+    font-size: 16px;
+  }
+  header .header-2 .right-container .menu-icon {
+    display: none;
+  }
+  .content .header-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-top: 0px;
+    height: 70px;
+  }
+  .content .header-1 h2 {
+    font-size: 17px;
+  }
+  .content .header-1 ul {
+    margin-top: 0;
+    justify-self: center;
+  }
+  .content .section-1 p, .content .section-1 h1, .content .section-1 button {
+    text-align: center;
+  }
+  .content .section-1 h1 {
+    margin-top: 10px;
+    font-size: 60px;
+  }
+  .content .section-1 p {
+    width: 700px;
+    margin: 20px auto 0;
+  }
+  .content .section-1 button {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .content .section-2 .item-carousel .item {
+    width: 35%;
+  }
+  .content .section-4 p, .content .section-4 h1, .content .section-4 button {
+    text-align: center;
+  }
+  .content .section-4 h1 {
+    margin-top: 10px;
+    font-size: 60px;
+  }
+  .content .section-4 p {
+    width: 700px;
+    margin: 20px auto 0;
+  }
+  .content .section-4 button {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .content .section-5 .essentials-flex .essentials-items-container {
+    width: 32.5%;
   }
 }/*# sourceMappingURL=style.css.map */
