@@ -22,7 +22,7 @@ searchIcon.addEventListener("click", () => {
     searchCancelToggle.style.transform = "scale(1)"
 })
 searchCancelToggle.addEventListener("click", () => {
-    navBarSearchContainer.style.top = "-100%"
+    navBarSearchContainer.style.top = "-150%"
     inputContainer.style.width = "0"
     searchCancelToggle.style.transform = "scale(0)"
 })
