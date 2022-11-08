@@ -71,6 +71,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
   }
   header .header-2 .right-container .navbar-search-container {
     position: absolute;
@@ -146,7 +148,6 @@
   }
   header .header-2 .right-container img {
     width: 22px;
-    margin-left: 25px;
     cursor: pointer;
   }
   header .header-2 .right-container .search-container {
