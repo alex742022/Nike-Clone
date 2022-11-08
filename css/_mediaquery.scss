@@ -20,6 +20,7 @@
             display: flex;
             align-items: center;
             padding: 13px 20px;
+            z-index: 10;
             .logo-2{
                 width: 100%;
                 .img-logo-2{
@@ -136,6 +137,7 @@
                     cursor: pointer;
                 }
                 .search-container{
+                    display: block;
                     .search-icon-toggle{
                         display: block;
                     }
