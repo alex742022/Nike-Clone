@@ -735,6 +735,9 @@
   }
   header .header-2 .right-container .navbar-search-container {
     padding: 0 40px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   header .header-2 .right-container .navbar-search-container .navbar-search-header-container .navbar-search-logo {
     display: block;
