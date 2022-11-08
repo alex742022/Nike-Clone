@@ -85,16 +85,19 @@
     height: 100vh;
     z-index: 2;
     transition: top 0.1s ease;
-  }
-  header .header-2 .right-container .navbar-search-container .navbar-search-logo {
-    display: none;
-    width: 60px;
+    background-color: white;
   }
   header .header-2 .right-container .navbar-search-container .navbar-search-header-container {
     display: flex;
-    align-items: center;
     padding: 13px 20px;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  header .header-2 .right-container .navbar-search-container .navbar-search-header-container .navbar-search-logo {
+    display: none;
+    width: 60px;
   }
   header .header-2 .right-container .navbar-search-container .navbar-search-header-container .input-container {
     display: flex;
@@ -146,6 +149,21 @@
     transition: all 0.2s 0.4s ease;
     transform: scale(0);
     cursor: pointer;
+  }
+  header .header-2 .right-container .navbar-search-container .top-search-container {
+    width: 700px;
+    margin: 50px auto;
+    padding: 0 25px;
+  }
+  header .header-2 .right-container .navbar-search-container .top-search-container p {
+    color: gray;
+  }
+  header .header-2 .right-container .navbar-search-container .top-search-container ul {
+    list-style: none;
+  }
+  header .header-2 .right-container .navbar-search-container .top-search-container ul li {
+    margin-top: 20px;
+    font-size: 19px;
   }
   header .header-2 .right-container img {
     width: 22px;
@@ -705,14 +723,15 @@
   }
   header .header-2 .right-container {
     display: grid;
-    grid-template-columns: 1fr 50px 50px;
+    grid-template-columns: 1fr 20px 20px;
+    justify-items: flex-end;
     width: 100%;
     height: 50px;
   }
   header .header-2 .right-container .navbar-search-container {
-    height: 200px;
+    padding: 0 40px;
   }
-  header .header-2 .right-container .navbar-search-container .navbar-search-logo {
+  header .header-2 .right-container .navbar-search-container .navbar-search-header-container .navbar-search-logo {
     display: block;
   }
   header .header-2 .right-container .navbar-search-container .navbar-search-header-container .input-container {

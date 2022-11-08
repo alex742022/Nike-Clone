@@ -75,15 +75,17 @@
                     height: 100vh;
                     z-index: 2;
                     transition: top .1s ease;
-                    .navbar-search-logo{
-                        display: none;
-                        width: 60px;
-                    }
+                    background-color: white;
                     .navbar-search-header-container{
                         display: flex;
-                        align-items: center;
                         padding: 13px 20px;
-                        justify-content: flex-end;
+                        justify-content: space-between;
+                        align-items: center;
+                        column-gap: 20px;
+                        .navbar-search-logo{
+                            display: none;
+                            width: 60px;
+                        }
                         .input-container{
                             display: flex;
                             align-items: center;
@@ -126,6 +128,21 @@
                             transition: all .2s .4s ease;
                             transform: scale(0);
                             cursor: pointer;
+                        }
+                    }
+                    .top-search-container{
+                        width: 700px;
+                        margin: 50px auto;
+                        padding: 0 25px;
+                        p{
+                            color: gray
+                        }
+                        ul{
+                            list-style: none;
+                            li{
+                                margin-top: 20px;
+                                font-size: 19px;
+                            }
                         }
                     }
                 }
@@ -685,7 +702,6 @@
             .about-list{
                 //display
                 display: flex;
-    
                 list-style: none;
                 font-size: 12px;
                 li{
@@ -716,7 +732,6 @@
                     column-gap: 20px;
                     width: 100%;
                     height: fit-content;
-                    // background-color: gray;
                     img{
                         display: none;
                     }
@@ -729,18 +744,17 @@
                 }
             }
             .right-container{
-                // background-color: gray;
                 display: grid;
-                grid-template-columns: 1fr 50px 50px;
+                grid-template-columns: 1fr 20px 20px;
+                justify-items: flex-end;
                 width: 100%;
                 height: 50px;
                 .navbar-search-container{
-                    // position: sticky;
-                    height: 200px;
-                    .navbar-search-logo{
-                        display: block;
-                    }
+                    padding: 0 40px;
                     .navbar-search-header-container{
+                        .navbar-search-logo{
+                            display: block;
+                        }
                         .input-container{
                             margin: 0 auto;
                         }
