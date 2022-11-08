@@ -670,7 +670,7 @@
     background: rgba(0, 0, 0, 0.03);
     padding: 7px 50px;
   }
-  header .header-1 img {
+  header .header-1 .logo-1 {
     width: 20px;
   }
   header .header-1 .about-list {
@@ -678,10 +678,15 @@
     list-style: none;
     font-size: 12px;
   }
-  header .header-1 .about-list li {
+  header .header-1 .about-list a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+  }
+  header .header-1 .about-list a li {
     margin-left: 13px;
   }
-  header .header-1 .about-list span {
+  header .header-1 .about-list a span {
     margin-left: 13px;
   }
   header .header-2 {

@@ -696,7 +696,7 @@
             transition: height 1s ease;
             background: rgba(0,0,0,.03);
             padding: 7px 50px;
-            img{
+            .logo-1{
                 width: 20px;
             }
             .about-list{
@@ -704,11 +704,16 @@
                 display: flex;
                 list-style: none;
                 font-size: 12px;
-                li{
-                    margin-left: 13px;
-                }
-                span{
-                    margin-left: 13px;
+                a{
+                    display: flex;
+                    text-decoration: none;
+                    color: black;
+                    li{
+                        margin-left: 13px;
+                    }
+                    span{
+                        margin-left: 13px;
+                    }
                 }
             }
         }
