@@ -22,7 +22,7 @@
             padding: 13px 20px;
             .logo-2{
                 width: 100%;
-                img{
+                .img-logo-2{
                     width: 60px;
                 }
             }
@@ -45,7 +45,7 @@
                     width: 320px;
                     background-color: white;
                     list-style: none;
-                    img{
+                    .x-icon{
                         height: 28px;
                         margin: 10px 20px 10px 0;
                         align-self: flex-end;
@@ -135,6 +135,14 @@
                     margin-left: 25px;
                     cursor: pointer;
                 }
+                .search-container{
+                    .search-icon-toggle{
+                        display: block;
+                    }
+                }
+                .menu-icon{
+                    display: block;
+                }
                 .heart-icon{
                     display: none;
                 }
@@ -153,7 +161,7 @@
     .content{
         .header-1{
             position: sticky;
-            top: 0;
+            top: -.02%;
             width: 100%;
             height: 140px;
             padding-top: 45px;
